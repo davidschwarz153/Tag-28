@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./main.ts"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>T28</title>
+    <style>
+        body{   
+            background-color:rgb(20, 56, 56);
+            color:burlywood; 
+            font-size: 18px; 
+            font-family:'Lucida Sans';}
+    </style>
+</head>
+<body>
+    <main class="flex justify-center">
+        <section id="home" class="m-10" >
+            <div class="p-4 rounded-2xl border-2 border-red-500 mb-10 shadow-lg">
+                <article class="w-40 h-40 bg-black rounded-2xl flex justify-center items-center shadow-lg">
+                    <input value="0" id="home-counter" class="text-[75px] w-[80px] h-[80px] bg-black text-center"></input>
+                </article>
+            </div>
+            <article id="home-btn" class="flex gap-4 justify-center mb-0">
+                <button class="border rounded-2xl bg-gray-800 p-2 text-[12px] shadow-lg" id="plus1-home">+1</button>
+                <button class="border rounded-2xl bg-gray-800 p-2 text-[12px] shadow-lg" id="plus2-home">+2</button>
+                <button class="border rounded-2xl bg-gray-800 p-2 text-[12px] shadow-lg" id="plus3-home">+3</button>
+            </article>
+        </section>
+
+        <section id="away" class="m-10 " >
+            <div class="p-4 rounded-2xl border-2 border-sky-500 mb-10 shadow-lg">
+                <article class="w-40 h-40 bg-black rounded-2xl flex justify-center items-center shadow-lg">
+                    <input value="0" id="away-counter" class="text-[75px] w-[80px] h-[80px] bg-black text-center"></input>
+                </article>
+            </div>
+            <article id="away-btn" class="flex gap-4 justify-center mb-0">
+                <button class="border rounded-2xl bg-gray-800 p-2 text-[12px] shadow-lg" id="plus1-away">+1</button>
+                <button class="border rounded-2xl bg-gray-800 p-2 text-[12px] shadow-lg" id="plus2-away">+2</button>
+                <button class="border rounded-2xl bg-gray-800 p-2 text-[12px] shadow-lg" id="plus3-away">+3</button>
+            </article>
+        </section>
+        
+    </main>
+    <section class="flex justify-center "><button class="border rounded-2xl bg-gray-800 p-4 shadow-lg" id="reset">Reset</button></section>
+
+</body>
+</html>
