@@ -6,48 +6,50 @@ document.getElementById("reset")?.addEventListener("click", resetScore);
 
 function resetScore(): void {
     if (homeCounter && awayCounter) {
-        score = 0
+        scoreHome = 0
+        scoreAway = 0
         homeCounter.value = "0";
         awayCounter.value = "0";
     }
 }
 
 //geht deutlich kürzer aber kb mehr 
-let score = 0
+let scoreHome = 0
+let scoreAway = 0
 document.getElementById("plus1-home")?.addEventListener("click", function(){
-    score++
+    scoreHome++
     if (homeCounter) {
-        homeCounter.value = String(score);
+        homeCounter.value = String(scoreHome);
     }
 });
 document.getElementById("plus2-home")?.addEventListener("click", function(){
-    score = score + 2
+    scoreHome = scoreHome + 2
     if (homeCounter) {
-        homeCounter.value = String(score);
+        homeCounter.value = String(scoreHome);
     }
 });
 document.getElementById("plus3-home")?.addEventListener("click", function(){
-    score = score + 3
+    scoreHome = scoreHome + 3
     if (homeCounter) {
-        homeCounter.value = String(score);
+        homeCounter.value = String(scoreHome);
     }
 });
 
 document.getElementById("plus1-away")?.addEventListener("click", function(){
-    score++
+    scoreAway++
     if (awayCounter) {
-        awayCounter.value = String(score);
+        awayCounter.value = String(scoreAway);
     }
 });
 document.getElementById("plus2-away")?.addEventListener("click", function(){
-    score = score + 2
+    scoreAway = scoreAway + 2
     if (awayCounter) {
-        awayCounter.value = String(score);
+        awayCounter.value = String(scoreAway);
     }
 });
 document.getElementById("plus3-away")?.addEventListener("click", function(){
-    score = score + 3
+    scoreAway = scoreAway + 3
     if (awayCounter) {
-        awayCounter.value = String(score);
+        awayCounter.value = String(scoreAway);
     }
 });
