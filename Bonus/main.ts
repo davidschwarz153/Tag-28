@@ -6,6 +6,7 @@ document.getElementById("reset")?.addEventListener("click", resetScore);
 
 function resetScore(): void {
     if (homeCounter && awayCounter) {
+        score = 0
         homeCounter.value = "0";
         awayCounter.value = "0";
     }
